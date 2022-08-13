@@ -1,0 +1,13 @@
+<div class="gifs">
+  <div class="gif" *ngFor="let gif of gifs">
+    <figure>
+      <img [src]="gif.images.downsized.url" alt="Image">
+      <div class="image__overlay image__overlay--primary">
+        <h3>{{gif.title}}</h3>
+        <span>{{gif.username}} rating of {{gif.rating}}</span>
+        <a href={{gif.url}}>Take a look</a>
+    </div>
+    </figure>
+
+  </div>
+</div>
